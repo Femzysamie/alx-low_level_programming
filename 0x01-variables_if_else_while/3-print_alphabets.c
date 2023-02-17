@@ -1,28 +1,22 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - program that prints the alphabet in lowercase,and then in uppercase
+ * main - print lowercase followed by uppercase alphabets
  *
- * return: 0, if succesful
+ * Return: 0, if succesful
  */
 int main(void)
 {
-	char lc = 'a';
-	char up = 'A';
+	char lc;
 
-	while (lc <= 'z')
+	for (lc = 'a' ; lc <= 'z' ; lc++)
 	{
 		putchar(lc);
-		lc++;
 	}
-
-	while (up <= 'Z')
+	for (lc = 'a' ; lc <= 'z' ; lc++)
 	{
-		putchar(up);
-		up++;
+		putchar(toupper(lc));
 	}
-
 	putchar('\n');
-
-		return (0);
+	return (0);
 }
