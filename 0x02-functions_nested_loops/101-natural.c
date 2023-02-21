@@ -20,6 +20,4 @@ int main(void)
 	printf("%d\n", total);
 
 	return (0);
-}
-
-	
+}	
