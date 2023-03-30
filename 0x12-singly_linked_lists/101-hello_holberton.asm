@@ -1,4 +1,4 @@
-iglobal 	main
+global 	main
 	extern 	printf
 
 	section .text
