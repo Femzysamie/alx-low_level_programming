@@ -4,7 +4,7 @@
  * binary_to_uint - Converts a binary number to an unsigned int.
  * @b: pointer to a string of 0 and 1 chars.
  *
- * Return: [0]  If b is NULL or do not contian a binary number
+ * Return: [0]  If b is NULL or contains chars not 0 or 1
  *         else - the converted number.
  */
 
@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int num;
 
 	num = 0;
-	if (b == NULL)
+	if (!b)
 		return (0);
 	for (len = 0; b[len] != '\0'; len++)
 	{
